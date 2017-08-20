@@ -1,0 +1,148 @@
+@media screen and (max-width: 480px) {
+
+	header {
+		background-image: url("../content/images_src/headerbg.jpg");
+	}
+
+	.title, .subtitle {
+		color: white;
+		font-weight: 300;
+	}
+
+	#mainFigure {
+		display: none;
+	}
+	
+	#menu {
+		display: inherit;
+	}
+
+	#socialHeader {
+		display: inherit;
+		background-color: white;
+	}
+
+	.titleDivider {
+		height: 2px;
+	}
+
+	.featuredWork {
+		display: inline-block;
+	}
+
+	.appify, .sunflower, .bokeh {
+		margin-bottom: 2vw;
+	}
+
+	.itemLabel {
+		font-size: 24px;
+	}
+
+	.projlink {
+		font-size: 16px;
+	}
+
+	/* nav behavior modeled on Udacity example */
+
+	.nav {
+		z-index: 10;
+	    background-color: #fff;
+	    width: 300px;
+	    position: absolute;
+	    -webkit-transform: translate(-300px, 0);
+	    transform: translate(-300px, 0);
+	    transition: transform 0.3s ease;
+	}
+
+	.nav.open {
+		display: inline-block;
+	    -webkit-transform: translate(0, 0);
+	    transform: translate(0, 0);
+	}
+
+	.nav_item {
+		display: list-item;
+	    border-bottom: 1px solid #E0E0E0;
+	    width: 100%;
+	    text-align: left;
+	}
+
+}
+
+@media screen and (min-width: 481px) {
+
+	.logo {
+		max-width: 60%;
+	}
+
+	.featuredWork {
+		width: 30%;
+		display: inline-block;
+		order: 4;
+	}
+
+	.mainWindow {
+		width: 70%;
+		order: 5;
+	}
+
+	.appify, .sunflower, .bokeh {
+		margin-bottom: 2vw;
+	}
+
+	 .itemLabel {
+		display: inline;
+		font-size: 2vw;
+	}
+
+	#footer {
+		display: inherit;
+		text-align: left;
+	}
+
+}
+
+
+@media screen and (min-width: 767px) {
+
+	.logo {
+		width: 100%;
+		padding-top: 5em;
+	}
+
+	.mainWindow {
+		width:100%;
+		order: 4;
+	}
+
+	.sectionTitle {
+		order:5;
+	}
+
+	.featuredWork {
+		display: flex;
+		flex-wrap: wrap;
+		flex-grow: 1;
+		width: 100%;
+		order: 6;
+	}
+
+	.appify, .sunflower, .bokeh {
+		padding-right: 1em;
+		text-align: center;
+		max-width: 33.33333333%;
+	}
+
+	.sectionTitle, .itemLabel, .projlink {
+		display: inline;
+	}
+
+	.itemLabel {
+		font-size: 3vmax;
+	}
+
+	#footer {
+		display: inline;
+		text-align: right;
+	}
+}

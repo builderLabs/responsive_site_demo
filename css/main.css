@@ -1,0 +1,182 @@
+/* imported elements */
+
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+
+/* general elements */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {  
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #2d3c49;
+}
+
+img, embed, object, video {
+	max-width: 100%;
+}
+
+h2 {
+	font-size: 4vmin;
+	font-weight: 400;
+	color: #7d97ad;
+}
+
+h4 {
+	display: block;
+}
+
+h6 {
+	display: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+	margin-bottom: 2vh;
+}
+
+
+/* header elements */
+
+.logo {
+	margin-top: 2em;
+	padding-top: 3em;
+	padding-left: 2em;
+}
+
+.titlebox {
+	text-transform: uppercase;
+	text-align: right;
+	padding-right: 2em;
+	margin-top: 5em;
+}
+
+.title {
+	font-size: 7vw;
+	font-weight: lighter;
+}
+
+.subtitle {
+	font-size: 2vw;
+}
+
+#menu {
+	text-align: right;
+	display: none;
+}
+
+#socialHeader {
+	text-align: center;
+	font-size: 5vw;
+	border-style:none;
+	display: none;
+}
+
+.twitter, .facebook, .googleplus, .linkedin {
+	padding: 10px;
+}
+
+
+/* navigation menu: modeled on Udacity exmaple - restrict to mobile nav menu */
+
+.nav {
+	display: none;
+}
+
+.nav_list {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.nav_item {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 20%;
+	text-align: left;
+	line-height: 16px;
+	padding: 16px;
+	text-transform: uppercase;
+	background-color: black;
+}
+
+.titleDivider {
+	font-size: 1px;
+	height: 2px;
+	background-color: #7d97ad;
+	margin-top: 3vw;
+	margin-bottom: 3vw;
+	width: 100%;
+}
+
+
+/* main content */
+
+.content {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sectionTitle {
+	display: none;
+}
+
+.featuredWork {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+
+.appify, .sunflower, .bokeh {
+	padding-right: 1em;
+	text-align: center;
+	max-width: 100%;
+}
+
+.itemLabel {
+	text-align: center;
+	color: #2d3c49;
+}
+
+.projlink {
+	text-align: center;
+	margin:0;
+	color: #2d3c49;
+	font-size: 1.5vmin;
+}
+
+
+/* footer/end-section */
+
+.footerDivider {
+	font-size: 1px;
+	height: 1px;
+	background-color: #7d97ad;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	width: 100%;
+}
+
+#footer {
+	font-size: 20px;
+	margin-top: 2vmin;
+	margin-bottom: 2vmax;
+	display: none;
+}
